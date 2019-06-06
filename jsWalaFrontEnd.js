@@ -11,7 +11,7 @@ exports.ssa_transform = function (input) {
     try {    
         let ast = esprima.parseScript(input);
         let ast2 = normalize(ast);
-        let src = escdoegen.generate(ast2);
+        let src = escodegen.generate(ast2);
         results.error = "success"
         results.msg = src;
     } catch (err) {
