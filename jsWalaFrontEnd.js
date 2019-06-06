@@ -1,6 +1,6 @@
 
 const esprima = require('esprima');
-const escodegen = require('escodgen');
+const escodegen = require('escodegen');
 
 
 const { normalize } = require('./normalizer/lib/normalizer.js');
