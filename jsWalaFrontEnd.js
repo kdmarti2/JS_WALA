@@ -12,11 +12,11 @@ exports.ssa_transform = function (input) {
         let ast = esprima.parseScript(input);
         let ast2 = normalize(ast);
         let src = escodegen.generate(ast2);
-        results.error = "success"
+        results.error = "success";
         results.msg = src;
     } catch (err) {
-        results.error = "fail"
-        results.msg = err
+        results.error = "fail";
+        results.msg = err.message;
     } finally {
         return results;
     }
